@@ -1,0 +1,17 @@
+.ruff_cache/
+.idea/
+
+venv/
+.venv/
+
+.env
+.env.local
+.env.dev
+.env.prod
+.env.test
+
+*.pyc
+*.__pycache__
+
+uploads/*
+!uploads/__init__.py
