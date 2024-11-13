@@ -220,6 +220,13 @@ LOGGING = {
         'handlers': ["console"],
         'level': "DEBUG",
     },
+    'loggers': {
+        "django": {
+            "handlers": ["console"],
+            "level": "DEBUG",
+            "propagate": False,
+        },
+    },
 }
 
 
