@@ -7,15 +7,15 @@ from helpers.pagination import StandardPagination
 
 
 class CategoryListView(ListCreateAPIView):
-    pagination_class = StandardPagination
-    serializer_class = CategorySerializer
     queryset = Category.objects.all().order_by('-created_at')
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ['name']
     ordering_fields = ['name', 'created_at']
+    pagination_class = StandardPagination
+    serializer_class = CategorySerializer
 
 
 class CategoryDetailView(RetrieveUpdateDestroyAPIView):
-    serializer_class = CategorySerializer
     queryset = Category.objects.all()
+    serializer_class = CategorySerializer
     lookup_field = "id"
