@@ -13,7 +13,7 @@ Smolib (Small Library) Digital REST API
 2. Install dependency project
     - Menggunakan Poetry
         - Masuk environment `poetry shell`
-        - Install packages `poetry install`
+        - Install packages `poetry install --with dev`
     - Menggunakan Pip
         - Buat environment `python -m venv venv`
         - Masuk environment (Windows) `source venv/Scripts/activate`
